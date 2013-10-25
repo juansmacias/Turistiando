@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -737,7 +737,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="center" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="352" sectionHeaderHeight="22" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="vlh-Ut-kpA">
-                                <rect key="frame" x="20" y="239" width="280" height="309"/>
+                                <rect key="frame" x="20" y="185" width="280" height="383"/>
                                 <color key="backgroundColor" red="0.77004945280000003" green="0.0" blue="0.194321772" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.77004945280000003" green="0.0" blue="0.194321772" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -794,6 +794,9 @@
                                                     <state key="normal" title="Tomar Foto">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="tomarFoto:" destination="OxT-9D-nhy" eventType="touchUpInside" id="9wR-wa-WFh"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9X-6v-pTa">
                                                     <rect key="frame" x="120" y="248" width="100" height="28"/>
@@ -838,7 +841,6 @@
                                             <outlet property="LUgarPosicion" destination="n9X-6v-pTa" id="GLk-BF-Ti8"/>
                                             <outlet property="calificacion" destination="Yqc-xv-mUt" id="9Ge-f8-pBg"/>
                                             <outlet property="libreria" destination="ZOc-wz-v6d" id="TD6-2O-1li"/>
-                                            <outlet property="tomarFoto" destination="kcb-0X-syw" id="7Xf-Ke-CQV"/>
                                             <outlet property="txtfieldFecha" destination="w8b-rk-0Lx" id="LaH-Pb-aQM"/>
                                         </connections>
                                     </tableViewCell>

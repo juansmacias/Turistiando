@@ -437,6 +437,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Turistiando Colombia";
+				TargetAttributes = {
+					8FD7B24317E4D0C200C42776 = {
+						DevelopmentTeam = 82PLRHJNTF;
+					};
+				};
 			};
 			buildConfigurationList = 8FD7B23F17E4D0C200C42776 /* Build configuration list for PBXProject "Turistiando" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -649,11 +654,14 @@
 		8FD7B27D17E4D0C200C42776 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turistiando/Turistiando-Prefix.pch";
 				INFOPLIST_FILE = "Turistiando/Turistiando-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -661,11 +669,14 @@
 		8FD7B27E17E4D0C200C42776 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Turistiando/Turistiando-Prefix.pch";
 				INFOPLIST_FILE = "Turistiando/Turistiando-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
