@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24BAC28F1820A6AA00361BDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BAC28E1820A6AA00361BDE /* CoreLocation.framework */; };
+		24BAC2921820AF6F00361BDE /* Experiencia.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BAC2911820AF6F00361BDE /* Experiencia.m */; };
 		8F4B551317E75C1C0014B891 /* NSActividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551217E75C1C0014B891 /* NSActividad.m */; };
 		8F4B551917E75C740014B891 /* NSDiccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551817E75C740014B891 /* NSDiccionario.m */; };
 		8F4B551C17E75C830014B891 /* NSLugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551B17E75C830014B891 /* NSLugar.m */; };
@@ -78,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24BAC28E1820A6AA00361BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		24BAC2901820AF6F00361BDE /* Experiencia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experiencia.h; sourceTree = "<group>"; };
+		24BAC2911820AF6F00361BDE /* Experiencia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experiencia.m; sourceTree = "<group>"; };
 		8F4B551117E75C1C0014B891 /* NSActividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSActividad.h; sourceTree = "<group>"; };
 		8F4B551217E75C1C0014B891 /* NSActividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSActividad.m; sourceTree = "<group>"; };
 		8F4B551717E75C740014B891 /* NSDiccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDiccionario.h; sourceTree = "<group>"; };
@@ -175,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BAC28F1820A6AA00361BDE /* CoreLocation.framework in Frameworks */,
 				FA653C96180CDDAF009B80B3 /* MobileCoreServices.framework in Frameworks */,
 				FA31B1C118070FA400E284AC /* MapKit.framework in Frameworks */,
 				FA1D96E017EB5E0E0050101D /* EventKit.framework in Frameworks */,
@@ -239,6 +245,7 @@
 		8FD7B24617E4D0C200C42776 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24BAC28E1820A6AA00361BDE /* CoreLocation.framework */,
 				FA653C95180CDDAF009B80B3 /* MobileCoreServices.framework */,
 				FA653C93180CDD0A009B80B3 /* QuartzCore.framework */,
 				FA31B1C018070FA400E284AC /* MapKit.framework */,
@@ -321,6 +328,8 @@
 				8F6B8AB917E4EA6B003D40DB /* Actividad.m */,
 				8F8BA10B17E65CD30087CA78 /* Diccionario.h */,
 				8F8BA10C17E65CD30087CA78 /* Diccionario.m */,
+				24BAC2901820AF6F00361BDE /* Experiencia.h */,
+				24BAC2911820AF6F00361BDE /* Experiencia.m */,
 			);
 			name = mundo;
 			sourceTree = "<group>";
@@ -516,6 +525,7 @@
 			files = (
 				FA0B734517E927270004BF4B /* Actividad.m in Sources */,
 				FA0B733417E8B5AE0004BF4B /* IntroViewController.m in Sources */,
+				24BAC2921820AF6F00361BDE /* Experiencia.m in Sources */,
 				FAC7822E17E6D0220006E578 /* UIImage+Resize.m in Sources */,
 				FA5D0A8F17E5AA9E00577E21 /* IAPuzzleBoard.m in Sources */,
 				FA5D0A8E17E5AA9800577E21 /* SWRevealViewController.m in Sources */,

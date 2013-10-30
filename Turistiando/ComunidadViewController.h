@@ -6,8 +6,13 @@
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
+# import <MapKit/MapKit.h>
 
-@interface ComunidadViewController : UIViewController
+@interface ComunidadViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,CLLocationManagerDelegate>
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *buttonBarMenu;
+@property (strong, nonatomic) IBOutlet MKMapView *mapaE;
+@property (strong,nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) IBOutlet UITableView *tablaExperiencias;
+@property (strong, nonatomic) IBOutlet UIButton *buscarAmigos;
 
 @end

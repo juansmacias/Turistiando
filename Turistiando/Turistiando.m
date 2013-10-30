@@ -102,4 +102,21 @@ static Turistiando * instancia = nil;
     return result;
 }
 
+-(NSArray*) experienciasCercanasLugar: (NSString*) lugarA aRango: (int) rango
+{
+    NSMutableArray* result;
+    for( int i=0; i<[self.lugares count];i++)
+    {
+        Lugar*lug = [self.lugares objectAtIndex:i];
+        if ([lug.nombreL isEqualToString:lugarA]) {
+            NSArray *resultA =lug.actividades;
+            result = [NSMutableArray arrayWithCapacity:[resultA count]];
+            for (Actividad* act in resultA) {
+                [result addObject:act.nombre];
+            }
+        }
+    }
+    return result;
+}
+
 @end

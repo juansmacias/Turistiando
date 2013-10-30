@@ -18,12 +18,18 @@
   */
     NSMutableArray *lugares;
     
+    /*!
+     lista de experiencias
+     */
+    NSMutableArray *experiencias;
+    
     NSString * nombre;
     
     NSString *nacio;
 }
 
 @property(strong,nonatomic) NSMutableArray *lugares;
+@property(strong,nonatomic) NSMutableArray *experiencias;
 @property(strong,nonatomic) NSString * nombre;
 @property(strong,nonatomic) NSString *nacio;
 
@@ -39,6 +45,8 @@
 -(void) agregarActividadADiccionarioLugar: (Actividad*) actividadA aLugar: (NSString*) lugarA;
 
 -(NSArray*) actividadesEnLugar:(NSString*) nlugar;
+
+-(NSArray*) experienciasCercanasLugar: (NSString*) lugarA aRango: (int) rango;
 
 /*!
  @method retorna los lugares de Turistiando
