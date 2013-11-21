@@ -20,9 +20,14 @@
 		0B3E4C4F183DB8A5002BD4EA /* NGLAR.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0B3E4C4E183DB8A5002BD4EA /* NGLAR.xml */; };
 		0B3E4C52183DB93B002BD4EA /* NGLAR.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B3E4C51183DB93B002BD4EA /* NGLAR.pdf */; };
 		2459210C183D8FF200057516 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459210B183D8FF200057516 /* Storyboard.storyboard */; };
-		24592111183D998300057516 /* PerfilViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24592110183D998300057516 /* PerfilViewController_iPad.m */; };
 		24BAC28F1820A6AA00361BDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BAC28E1820A6AA00361BDE /* CoreLocation.framework */; };
 		24BAC2921820AF6F00361BDE /* Experiencia.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BAC2911820AF6F00361BDE /* Experiencia.m */; };
+		24CF203D183DC6A800B67E47 /* CiudadViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF203C183DC6A800B67E47 /* CiudadViewController_iPad.m */; };
+		24CF2040183DC73300B67E47 /* DiccionarioViewController_ipad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF203F183DC73300B67E47 /* DiccionarioViewController_ipad.m */; };
+		24CF2043183DC77B00B67E47 /* VerElementoViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF2042183DC77B00B67E47 /* VerElementoViewController_iPad.m */; };
+		24CF2046183DC79300B67E47 /* ComunidadViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF2045183DC79300B67E47 /* ComunidadViewController_iPad.m */; };
+		24CF2049183DC7AC00B67E47 /* PerfilViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF2048183DC7AC00B67E47 /* PerfilViewController_iPad.m */; };
+		24CF204C183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CF204B183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.m */; };
 		8F4B551317E75C1C0014B891 /* NSActividad.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551217E75C1C0014B891 /* NSActividad.m */; };
 		8F4B551917E75C740014B891 /* NSDiccionario.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551817E75C740014B891 /* NSDiccionario.m */; };
 		8F4B551C17E75C830014B891 /* NSLugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4B551B17E75C830014B891 /* NSLugar.m */; };
@@ -138,11 +143,21 @@
 		0B3E4C50183DB8E4002BD4EA /* NGLAR.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = NGLAR.dat; sourceTree = "<group>"; };
 		0B3E4C51183DB93B002BD4EA /* NGLAR.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = NGLAR.pdf; sourceTree = "<group>"; };
 		2459210B183D8FF200057516 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		2459210F183D998300057516 /* PerfilViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilViewController_iPad.h; sourceTree = "<group>"; };
-		24592110183D998300057516 /* PerfilViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilViewController_iPad.m; sourceTree = "<group>"; };
 		24BAC28E1820A6AA00361BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		24BAC2901820AF6F00361BDE /* Experiencia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experiencia.h; sourceTree = "<group>"; };
 		24BAC2911820AF6F00361BDE /* Experiencia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Experiencia.m; sourceTree = "<group>"; };
+		24CF203B183DC6A800B67E47 /* CiudadViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadViewController_iPad.h; sourceTree = "<group>"; };
+		24CF203C183DC6A800B67E47 /* CiudadViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadViewController_iPad.m; sourceTree = "<group>"; };
+		24CF203E183DC73300B67E47 /* DiccionarioViewController_ipad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiccionarioViewController_ipad.h; sourceTree = "<group>"; };
+		24CF203F183DC73300B67E47 /* DiccionarioViewController_ipad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiccionarioViewController_ipad.m; sourceTree = "<group>"; };
+		24CF2041183DC77B00B67E47 /* VerElementoViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerElementoViewController_iPad.h; sourceTree = "<group>"; };
+		24CF2042183DC77B00B67E47 /* VerElementoViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerElementoViewController_iPad.m; sourceTree = "<group>"; };
+		24CF2044183DC79300B67E47 /* ComunidadViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComunidadViewController_iPad.h; sourceTree = "<group>"; };
+		24CF2045183DC79300B67E47 /* ComunidadViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComunidadViewController_iPad.m; sourceTree = "<group>"; };
+		24CF2047183DC7AC00B67E47 /* PerfilViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilViewController_iPad.h; sourceTree = "<group>"; };
+		24CF2048183DC7AC00B67E47 /* PerfilViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilViewController_iPad.m; sourceTree = "<group>"; };
+		24CF204A183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrearRecordatorioViewController_iPad.h; sourceTree = "<group>"; };
+		24CF204B183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrearRecordatorioViewController_iPad.m; sourceTree = "<group>"; };
 		8F4B551117E75C1C0014B891 /* NSActividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSActividad.h; sourceTree = "<group>"; };
 		8F4B551217E75C1C0014B891 /* NSActividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSActividad.m; sourceTree = "<group>"; };
 		8F4B551717E75C740014B891 /* NSDiccionario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDiccionario.h; sourceTree = "<group>"; };
@@ -362,8 +377,18 @@
 		2459210E183D994900057516 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				2459210F183D998300057516 /* PerfilViewController_iPad.h */,
-				24592110183D998300057516 /* PerfilViewController_iPad.m */,
+				24CF203B183DC6A800B67E47 /* CiudadViewController_iPad.h */,
+				24CF203C183DC6A800B67E47 /* CiudadViewController_iPad.m */,
+				24CF203E183DC73300B67E47 /* DiccionarioViewController_ipad.h */,
+				24CF203F183DC73300B67E47 /* DiccionarioViewController_ipad.m */,
+				24CF2041183DC77B00B67E47 /* VerElementoViewController_iPad.h */,
+				24CF2042183DC77B00B67E47 /* VerElementoViewController_iPad.m */,
+				24CF2044183DC79300B67E47 /* ComunidadViewController_iPad.h */,
+				24CF2045183DC79300B67E47 /* ComunidadViewController_iPad.m */,
+				24CF2047183DC7AC00B67E47 /* PerfilViewController_iPad.h */,
+				24CF2048183DC7AC00B67E47 /* PerfilViewController_iPad.m */,
+				24CF204A183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.h */,
+				24CF204B183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.m */,
 			);
 			name = iPad;
 			sourceTree = "<group>";
@@ -692,6 +717,8 @@
 				8FD7B25817E4D0C200C42776 /* AppDelegate.m in Sources */,
 				8FD7B28517E4D67000C42776 /* Turistiando.m in Sources */,
 				8FD7B28817E4D84900C42776 /* Lugar.m in Sources */,
+				24CF203D183DC6A800B67E47 /* CiudadViewController_iPad.m in Sources */,
+				24CF2040183DC73300B67E47 /* DiccionarioViewController_ipad.m in Sources */,
 				FA98DC7817E4EBE0007DB23A /* TablaIndiceViewController.m in Sources */,
 				FA197A9817E5856B0000813D /* CiudadOpcionViewController.m in Sources */,
 				FA197A9B17E5913F0000813D /* DiccionarioViewController.m in Sources */,
@@ -706,9 +733,13 @@
 				8F4B552417E796DC0014B891 /* NSActividad+NSActividad_Sistema.m in Sources */,
 				8F4B552717E79C880014B891 /* NSDiccionario+NSDiccionario_Sistema.m in Sources */,
 				8F4B552A17E79CD90014B891 /* NSLugar+NSLugar_Sistema.m in Sources */,
+				24CF2049183DC7AC00B67E47 /* PerfilViewController_iPad.m in Sources */,
+				24CF2043183DC77B00B67E47 /* VerElementoViewController_iPad.m in Sources */,
 				FA8A956B17EA7F23002B22FF /* CiudadCell.m in Sources */,
 				FA94469517EA93D5006AFD27 /* AgregarCiudadViewController.m in Sources */,
+				24CF204C183DC7D900B67E47 /* CrearRecordatorioViewController_iPad.m in Sources */,
 				FA59FE8B17EAB82400565251 /* CrearExperienciaActivCell.m in Sources */,
+				24CF2046183DC79300B67E47 /* ComunidadViewController_iPad.m in Sources */,
 				FA59FE8E17EAB84600565251 /* ExperianciaActivCell.m in Sources */,
 				0B3E4C4D183DB145002BD4EA /* NGLSViewController.mm in Sources */,
 				24592111183D998300057516 /* PerfilViewController_iPad.m in Sources */,

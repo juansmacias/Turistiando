@@ -1,33 +1,35 @@
 //
-//  PerfilViewController_iPad.m
+//  CiudadViewController_iPad.m
 //  Turistiando
 //
 //  Created by Juan Sebastian Macias Quintero on 20/11/13.
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "PerfilViewController_iPad.h"
+#import "CiudadViewController_iPad.h"
+#import "DiccionarioViewController_ipad.h"
 #import "Turistiando.h"
 #import "CiudadCell.h"
 
-@interface PerfilViewController_iPad ()
+@interface CiudadViewController_iPad ()
 
 @end
 
-@implementation PerfilViewController_iPad
+@implementation CiudadViewController_iPad
 
 @synthesize menu = _menu;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Turistiando *tour = [Turistiando darInstancia];
-    self.nombre.text = tour.nombre;
-    self.nacio.text = tour.nacio;
-    
     self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
-    self.tabla.dataSource = self;
-    self.tabla.delegate = self;
+    self.tablaMenu.dataSource = self;
+    self.tablaMenu.delegate = self;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,13 +37,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)viewDidAppear:(BOOL)animated
-{
-    self.menu = [NSMutableArray arrayWithArray:@[@"titulo",@"perfil", @"ciudades",@"ciudad",@"agregarCiudad", @"comunidad"]];
-}
-
-
-#pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -104,5 +99,13 @@
     return cell;
 }
 
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"diccionario"]) {
+        DiccionarioViewController_ipad *siguien = [segue destinationViewController];
+        siguien.ciudad = self.title;
+    }
+}
 
 @end
