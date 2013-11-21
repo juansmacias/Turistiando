@@ -48,7 +48,7 @@
     
     [self.mapaE addAnnotation:point3];
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    Turistiando* tur = [Turistiando darInstancia];
+    //Turistiando* tur = [Turistiando darInstancia];
 //	if (tur.) {
 //        <#statements#>
 //    }
@@ -63,6 +63,17 @@
     point.title = @"Aca estoy";
     
     [self.mapaE addAnnotation:point];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return nil;
 }
 
 

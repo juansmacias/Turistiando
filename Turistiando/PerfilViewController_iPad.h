@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PerfilViewController_iPad : UIViewController
+@interface PerfilViewController_iPad : UIViewController<UITableViewDataSource,UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UILabel *nombre;
+@property (strong, nonatomic) IBOutlet UITableView *tabla;
+@property (strong, nonatomic) IBOutlet UILabel *nacio;
+@property (strong,nonatomic) NSMutableArray *menu;
 
 @end

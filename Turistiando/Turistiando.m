@@ -14,6 +14,7 @@
 @synthesize lugares= _lugares;
 @synthesize nombre = _nombre;
 @synthesize nacio = _nacio;
+@synthesize experiencias = _experiencias;
 
 static Turistiando * instancia = nil;
 

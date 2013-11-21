@@ -1,32 +1,26 @@
 //
-//  CrearRecordatorioViewController.m
+//  CrearRecordatorioViewController_iPad.m
 //  Turistiando
 //
-//  Created by Macias on 19/09/13.
+//  Created by Juan Sebastian Macias Quintero on 20/11/13.
 //  Copyright (c) 2013 Turistiando Colombia. All rights reserved.
 //
 
-#import "CrearRecordatorioViewController.h"
+#import "CrearRecordatorioViewController_iPad.h"
 #import <EventKit/EKReminder.h>
 #import <EventKit/EKAlarm.h>
 
-@interface CrearRecordatorioViewController ()
+@interface CrearRecordatorioViewController_iPad ()
 
 @end
 
-@implementation CrearRecordatorioViewController
+@implementation CrearRecordatorioViewController_iPad
 
 /*!
  Se sintetizan todos los atributos que se encinetran en la onterfaz de la clase
  !*/
 
 @synthesize eventStore = _eventStore;
-
-/*!
- _____________________________________________________________________________________________
- Metodos de inicializacion.
- !*/
-
 
 - (void)viewDidLoad
 {
@@ -38,10 +32,7 @@
                                         if (!granted)
                                             NSLog(@"Access to store not granted");
                                     }];
-
-
     }
-    	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +48,7 @@
 }
 
 /*!
- ___________________________________________________________________________________________________
+ ______________________________________________________________________________________________
  Metodos de Auxiliares.
  !*/
 

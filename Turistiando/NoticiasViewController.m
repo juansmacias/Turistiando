@@ -21,10 +21,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
-
-    
     self.buttonBarMenu.target = self.revealViewController;
     self.buttonBarMenu.action = @selector(revealToggle:);
     
