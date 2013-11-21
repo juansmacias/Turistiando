@@ -29,6 +29,23 @@ static Turistiando * instancia = nil;
 -(void)inicializar
 {
     lugares = [[NSMutableArray alloc] init];
+//    //Prepare to establish the connection
+//    NSURL *url = [NSURL URLWithString:@"http://157.253.238.144:8090/tur/webresources/webservice.usuario/find1"];
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    
+//    [request setHTTPMethod:@"GET"];
+//    [request setValue:@"1" forHTTPHeaderField:@"id"];
+//    
+//    NSLog(@"Url de envio %@",request.URL.fragment);
+//    NSHTTPURLResponse *response = nil;
+//    NSError *error = nil;
+//    //Make the request
+//    NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+//    if(error ==nil)
+//    {
+//        //Parse the data as a series of Note objects
+//        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
+//    }
 }
 
 -(NSMutableArray *)lugares

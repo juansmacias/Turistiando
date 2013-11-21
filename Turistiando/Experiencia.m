@@ -10,4 +10,21 @@
 
 @implementation Experiencia
 
+@synthesize nombre = _nombre;
+@synthesize nombreUsu = _nombreUsu;
+@synthesize latitud;
+@synthesize longitud;
+
+-(id)init
+{
+    self=[super init];
+    if (self) {
+        latitud=101;
+        longitud = 101;
+    }
+
+    return self;
+}
+
+
 @end
