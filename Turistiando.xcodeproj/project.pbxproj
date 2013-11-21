@@ -19,6 +19,7 @@
 		0B3E4C4D183DB145002BD4EA /* NGLSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B3E4C4C183DB145002BD4EA /* NGLSViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0B3E4C4F183DB8A5002BD4EA /* NGLAR.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0B3E4C4E183DB8A5002BD4EA /* NGLAR.xml */; };
 		0B3E4C52183DB93B002BD4EA /* NGLAR.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B3E4C51183DB93B002BD4EA /* NGLAR.pdf */; };
+		0B85AD75183E396300AFB7E2 /* 3D in Resources */ = {isa = PBXBuildFile; fileRef = 0B85AD74183E396300AFB7E2 /* 3D */; };
 		2459210C183D8FF200057516 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2459210B183D8FF200057516 /* Storyboard.storyboard */; };
 		24BAC28F1820A6AA00361BDE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BAC28E1820A6AA00361BDE /* CoreLocation.framework */; };
 		24BAC2921820AF6F00361BDE /* Experiencia.m in Sources */ = {isa = PBXBuildFile; fileRef = 24BAC2911820AF6F00361BDE /* Experiencia.m */; };
@@ -142,6 +143,7 @@
 		0B3E4C4E183DB8A5002BD4EA /* NGLAR.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = NGLAR.xml; sourceTree = "<group>"; };
 		0B3E4C50183DB8E4002BD4EA /* NGLAR.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = NGLAR.dat; sourceTree = "<group>"; };
 		0B3E4C51183DB93B002BD4EA /* NGLAR.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = NGLAR.pdf; sourceTree = "<group>"; };
+		0B85AD74183E396300AFB7E2 /* 3D */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 3D; sourceTree = "<group>"; };
 		2459210B183D8FF200057516 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		24BAC28E1820A6AA00361BDE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		24BAC2901820AF6F00361BDE /* Experiencia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Experiencia.h; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 		0B3E4C26183DAF4A002BD4EA /* AR */ = {
 			isa = PBXGroup;
 			children = (
+				0B85AD74183E396300AFB7E2 /* 3D */,
 				0B3E4C51183DB93B002BD4EA /* NGLAR.pdf */,
 				0B3E4C50183DB8E4002BD4EA /* NGLAR.dat */,
 				0B3E4C4E183DB8A5002BD4EA /* NGLAR.xml */,
@@ -667,6 +670,7 @@
 				0B3E4C52183DB93B002BD4EA /* NGLAR.pdf in Resources */,
 				FA0B733617E8B9FC0004BF4B /* icono57.png in Resources */,
 				FA0B734017E912640004BF4B /* ComunidadAvatar.png in Resources */,
+				0B85AD75183E396300AFB7E2 /* 3D in Resources */,
 				FA0B734217E912AD0004BF4B /* donut.JPG in Resources */,
 				8F6073A417EABAE700F8555C /* ciudadAvatar.jpg in Resources */,
 				0B3E4C4F183DB8A5002BD4EA /* NGLAR.xml in Resources */,
@@ -742,7 +746,6 @@
 				24CF2046183DC79300B67E47 /* ComunidadViewController_iPad.m in Sources */,
 				FA59FE8E17EAB84600565251 /* ExperianciaActivCell.m in Sources */,
 				0B3E4C4D183DB145002BD4EA /* NGLSViewController.mm in Sources */,
-				24592111183D998300057516 /* PerfilViewController_iPad.m in Sources */,
 				FA59FE9117EABD0E00565251 /* CrearRecordatorioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
