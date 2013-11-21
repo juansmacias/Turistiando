@@ -56,10 +56,37 @@
     
     [self.mapaE addAnnotation:point3];
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
-    //Turistiando* tur = [Turistiando darInstancia];
-//	if (tur.) {
-//        <#statements#>
-//    }
+    
+    //Prepare to establish the connection
+    NSURL *url = [NSURL URLWithString:@"http://157.253.238.144:8090/tur/webresources/webservice.experiencia"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    [request setHTTPMethod:@"GET"];
+    [request setValue:@"1" forHTTPHeaderField:@"id"];
+    
+    NSHTTPURLResponse *response = nil;
+    NSError *error = nil;
+    //Make the request
+    NSData* responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+    if(error ==nil)
+    {
+        NSXMLParser *parser = [[NSXMLParser alloc] initWithData:responseData];
+        [parser setDelegate:self];
+        // Depending on the XML document you're parsing, you may want to enable these features of NSXMLParser.
+        [parser setShouldProcessNamespaces:YES];
+        [parser setShouldReportNamespacePrefixes:YES];
+        [parser parse];
+
+    }
+
+    for (Experiencia *ex in self.experenciasT) {
+       MKPointAnnotation *point4 = [[MKPointAnnotation alloc] init];
+        point4.coordinate =CLLocationCoordinate2DMake(ex.latitud, ex.longitud);
+          point4.title = ex.nombre;
+        point4.title = ex.nombreUsu;
+        [self.mapaE addAnnotation:point4];
+    }
+
 }
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
