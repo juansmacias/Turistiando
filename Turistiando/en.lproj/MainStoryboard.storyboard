@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Intro View Controller-->
@@ -631,6 +631,25 @@
             </objects>
             <point key="canvasLocation" x="2030" y="-743"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="0Y5-8T-BKN">
+            <objects>
+                <viewController id="9xe-HE-dpn" customClass="NGLSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T1c-T1-GCY"/>
+                        <viewControllerLayoutGuide type="bottom" id="gRT-6L-Pth"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JWz-tN-m5l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yhc-oo-fya"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ukW-g8-uVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2465" y="-743"/>
+        </scene>
         <!--Ciudad Opcion View Controller - Ciudad-->
         <scene sceneID="fAe-Af-n8r">
             <objects>
@@ -1019,7 +1038,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS3-WR-0M2">
-                                <rect key="frame" x="226" y="107" width="85" height="43"/>
+                                <rect key="frame" x="228" y="85" width="85" height="43"/>
                                 <color key="backgroundColor" red="0.77004945280000003" green="0.75484130130000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="Recuerdame">
@@ -1027,6 +1046,18 @@
                                 </state>
                                 <connections>
                                     <segue destination="rw6-KF-eyf" kind="push" identifier="crearRecordatorio" id="iNm-9d-ZMz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRD-fr-osv">
+                                <rect key="frame" x="228" y="134" width="85" height="43"/>
+                                <color key="backgroundColor" red="0.77004945280000003" green="0.75484130130000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Ver Modelo">
+                                    <color key="titleColor" red="0.0" green="0.37693920730000002" blue="0.77004945280000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="verModelo:" destination="OxT-9D-nhy" eventType="touchUpInside" id="W2N-nW-dLW"/>
+                                    <segue destination="9xe-HE-dpn" kind="push" id="Lfz-gl-Mic"/>
                                 </connections>
                             </button>
                         </subviews>

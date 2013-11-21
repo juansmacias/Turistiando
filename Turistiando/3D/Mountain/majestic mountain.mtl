@@ -1,0 +1,11 @@
+# MTL written from /Works/Clients/DB-Interactively/FrameWorks/NinevehGL/Externals/3D/Mountain/majestic mountain.obj
+newmtl material_1
+Kd 1 1 1
+Ns 80
+d 1
+illum 2
+Ka 0 0 0
+Ks 0 0 0
+map_Kd /Works/Clients/DB-Interactively/FrameWorks/NinevehGL/Externals/3D/Mountain/rockrequest.jpg
+map_Ka /Works/Clients/DB-Interactively/FrameWorks/NinevehGL/Externals/3D/Mountain/rockrequest.jpg
+map_Bump /Works/Clients/DB-Interactively/FrameWorks/NinevehGL/Externals/3D/Mountain/majestic mountain_mtl1_bumpamt.bmp
