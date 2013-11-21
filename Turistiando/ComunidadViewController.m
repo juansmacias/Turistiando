@@ -83,7 +83,7 @@
        MKPointAnnotation *point4 = [[MKPointAnnotation alloc] init];
         point4.coordinate =CLLocationCoordinate2DMake(ex.latitud, ex.longitud);
           point4.title = ex.nombre;
-        point4.title = ex.nombreUsu;
+        //point4.title = ex.nombreUsu;
         [self.mapaE addAnnotation:point4];
     }
 
