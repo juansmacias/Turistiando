@@ -167,7 +167,7 @@ Metodos de inicializacion.
 }
 
 - (IBAction)verModelo:(id)sender {
-    
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NGLSViewController * viewController = [[NGLSViewController alloc] init];
 }
 

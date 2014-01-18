@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="Medellin" size="560.000000 420.000000" />
+    <ImageTarget name="Monserrate" size="997.000000 679.000000" />
+    <ImageTarget name="Castillo" size="448.000000 304.000000" />
+  </Tracking>
+</QCARConfig>

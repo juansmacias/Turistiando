@@ -241,7 +241,7 @@
 	dataSet = imageTracker->createDataSet();
     dataSet->load([@"NGLAR.xml" cStringUsingEncoding:NSASCIIStringEncoding], QCAR::DataSet::STORAGE_APPRESOURCE);
 	imageTracker->activateDataSet(dataSet);
-	
+	NSLog(@"DataSet cargado y activado");
     // Continue execution on the main thread
     [self performSelectorOnMainThread:@selector(bumpAppStatus) withObject:nil waitUntilDone:NO];
     
@@ -332,21 +332,26 @@
 		
 		for (int i = 0; i < state.getNumActiveTrackables(); ++i)
 		{
+           // NSLog(@"Trackeado!!!!");
 			// Get the trackable
 			const QCAR::Trackable *trackable = state.getActiveTrackable(i);
 			QCAR::Matrix44F qMatrix = QCAR::Tool::convertPose2GLMatrix(trackable->getPose());
 			
 			if (!strcmp(trackable->getName(), "dragon"))
 			{
+                NSLog(@"Trackeado Con Nombre!!!!");
 				// Making the meshes visible again.
+                if (_dragon == nil) {
+                    NSLog(@"No existe!!!!");
+                }
 				_dragon.visible = YES;
-				_mountain.visible = YES;
+				//_mountain.visible = YES;
 				
 				// Moving the dragon into a circle above the mountain.
-				_dragon.x = cosf(angle * .02);
-				_dragon.z = sinf(angle * .02) - 1.0;
+				//_dragon.x = cosf(angle * .02);
+				//_dragon.z = sinf(angle * .02) - 1.0;
 				[_dragon lookAtPointX:0.0 toY:0.0 toZ:-1.0];
-				++angle;
+				//++angle;
 				
 				// Rebasing the meshes. The NinevehGL rebase is the key feature to work with AR engines and
 				// keep your meshes responsiveness to NinevehGL transformations.
@@ -355,7 +360,7 @@
 				// Remove a '/' from the following line to see the results when rebasing the camera.
 				//*
 				[_dragon rebaseWithMatrix:qMatrix.data scale:247.0f compatibility:NGLRebaseQualcommAR];
-				[_mountain rebaseWithMatrix:qMatrix.data scale:247.0f compatibility:NGLRebaseQualcommAR];
+				//[_mountain rebaseWithMatrix:qMatrix.data scale:247.0f compatibility:NGLRebaseQualcommAR];
 				/*/
                  // Rebase the camera has the same effect as objects, however you can't rebase a mesh and
                  // a camera at the same time. Choose one of these ways.
@@ -435,30 +440,38 @@
 	[self updateApplicationStatus:APPSTATUS_INIT_APP];
 }
 
+
 - (void) viewDidLoad
 {
 	// Must call super to agree with the UIKit rules.
 	[super viewDidLoad];
 	
+    
+    
+    CGAffineTransform transform = CGAffineTransformMakeRotation(M_PI/2);
+    self.view.transform = transform;
+    CGRect contentRect = CGRectMake(0, 0, 480, 320);
+    self.view.bounds = contentRect;
+    
+    
 	// Loading the dragon.
 	NSDictionary *settings;
 	settings = [NSDictionary dictionaryWithObjectsAndKeys:
 				kNGLMeshCentralizeYes, kNGLMeshKeyCentralize,
 				@"1.0", kNGLMeshKeyNormalize,
 				nil];
-	_dragon = [[NGLMesh alloc] initWithFile:@"Red Dragon.dae" settings:settings delegate:nil];
-	
-	// Loading the mountain.
-	settings = [NSDictionary dictionaryWithObjectsAndKeys:
-				kNGLMeshCentralizeYes, kNGLMeshKeyCentralize,
-				@"3.0", kNGLMeshKeyNormalize,
-				nil];
-	_mountain = [[NGLMesh alloc] initWithFile:@"majestic mountain.obj" settings:settings delegate:self];
-	_mountain.y = -0.5f;
-	_mountain.z = -1.0f;
+	_dragon = [[NGLMesh alloc] initWithFile:@"Metro8.obj" settings:settings delegate:nil];
+//	// Loading the mountain.
+//	settings = [NSDictionary dictionaryWithObjectsAndKeys:
+//				kNGLMeshCentralizeYes, kNGLMeshKeyCentralize,
+//				@"3.0", kNGLMeshKeyNormalize,
+//				nil];
+//	_mountain = [[NGLMesh alloc] initWithFile:@"majestic mountain.obj" settings:settings delegate:self];
+//	_mountain.y = -0.5f;
+//	_mountain.z = -1.0f;
 	
 	// Initializing the camera.
-	_camera = [[NGLCamera alloc] initWithMeshes:_dragon, _mountain, nil];
+	_camera = [[NGLCamera alloc] initWithMeshes:_dragon, nil];
 	
 	// Starts the debug monitor.
 	//[[NGLDebug debugMonitor] startWithView:(NGLView *)self.view];
